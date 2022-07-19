@@ -11,7 +11,7 @@
 
 # Slave setup
 
-- Need Install JDK 8.0. When installed java setup JAVA HOME
+- Need Install JDK . Same version as master. When installed java setup JAVA HOME
 
       export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
       echo $JAVA_HOME
