@@ -26,7 +26,27 @@
       tar -xvf apache-maven-3.6.3-bin.tar.gz
       mv apache-maven-3.6.3 /opt/
       echo $M2_HOME
+
+# More Setup Slave
       
+- Connect ssh to JenkinsMaster
+- Change to root
+            
+      sudo su -
+      cd /var/lib
+      ls -la
+      mkdir -p /var/lib/jenkins/.ssh
+      ssh-keyscan -H slave_IP >> /var/lib/jenkins/.ssh/known_hosts
+      cat /var/lib/jenkins/.ssh/known_hosts
+      chown -R jenkins:jenkins /var/lib/jenkins/.ssh
+      
+      
+      
+      
+      
+      
+      
+
 
 
 
