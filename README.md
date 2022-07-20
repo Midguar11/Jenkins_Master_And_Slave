@@ -4,10 +4,14 @@
 - Manage Jenkins / Manage nodes and clouds
 - New Node --> ( give name" winslave1 " ) --> selecect permanent agent --> ok
 - Description ( Windows Slave 1)
-- Remote root directory ( /home/jenkins/jenkins-workspace )
+- Remote root directory ( /home/username/jenkins )
 - Usage ( Only build jobs with labels experssions matching this node)
 - Launch method ( Launch agent via SSH )
 - Host Give my public ip ( 111.111.111.111)
+- Crendetials select setuped SSH Key
+- Hots key Verification Strategy : " Known hosts file Verification Strategy "
+- Availability: " Keep this Agent online as much as poosible "
+- Save
 
 # Slave setup
 
