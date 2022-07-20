@@ -48,7 +48,10 @@
  
  - Connect SSH to Slave:
  
-        sudo apt install acl
+       sudo apt install acl
+       sudo setfacl --modify user:$USER:rw /var/run/docker.sock
+       sudo systemctl restart docker
+       
  
  
       
