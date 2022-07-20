@@ -31,7 +31,7 @@
       mv apache-maven-3.6.3 /opt/
       echo $M2_HOME
 
-# More Setup Slave
+# More Setup JenkinsMaster
       
 - Connect ssh to JenkinsMaster
 - Change to root
@@ -43,6 +43,14 @@
       ssh-keyscan -H slave_IP >> /var/lib/jenkins/.ssh/known_hosts
       cat /var/lib/jenkins/.ssh/known_hosts
       chown -R jenkins:jenkins /var/lib/jenkins/.ssh
+      
+ # Slave Setup
+ 
+ - Connect SSH to Slave:
+ 
+        sudo apt install acl
+ 
+ 
       
       
       
